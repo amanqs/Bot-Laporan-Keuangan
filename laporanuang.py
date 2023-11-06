@@ -98,7 +98,10 @@ open_sheets = gsheets.open_by_url(sheets_url)
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 logging.info('Try logged in !')
 
-app = Client("my_bot", api_id=creds.api_id, api_hash=creds.api_hash, bot_token=creds.bot_token)
+app = Client("my_bot",
+             api_id="14802436",
+             api_hash="fa2bb567a8b45c564ac4d7f6f75bdb3d",
+             bot_token="6599729691:AAHnQAudNH19zxziLEm7r8zpMfDv74-aZ3c")
 
 @app.on_message(filters.command(['help', 'start']))
 async def cara_pengunaan(client, message):
