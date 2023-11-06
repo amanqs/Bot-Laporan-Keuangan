@@ -144,8 +144,8 @@ async def laporan_uang(client, message):
         splits = all.split()
         ins = inserts.append_row(splits)
         await message.reply_text('Laporan Berhasil !')
-    except:
-        await message.reply_text('Laporan Gagal, Pastikan Cara Penggunaannya Benar !')
+    except Exception as error:
+        await message.reply_text(error)
 
 if __name__ == '__main__':
     app.run()
