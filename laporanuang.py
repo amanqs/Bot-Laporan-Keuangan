@@ -2,7 +2,7 @@ import gspread
 import logging
 from datetime import datetime
 from aiogram import Bot, Dispatcher, types
-from aiogram.utils import executor
+#from aiogram.utils import executor
 
 # Masukan Bot Token Kalian
 # Masukan URL GoogleSpreadSheets 
@@ -65,4 +65,10 @@ async def laporan_uang(pesan: types.Message):
 		await pesan.answer('Laporan Gagal, Pastikan Cara Pengunaanya Benar !')
 	
 if __name__ == '__main__':
-	executor.start_polling(dp,skip_updates=True)
+    loop = asyncio.get_event_loop()
+    try:
+        loop.create_task(dp.start_polling())
+        loop.run_forever()
+    except KeyboardInterrupt:
+        loop.stop()
+        loop.run_until_complete(loop.shutdown_asyncgens())
