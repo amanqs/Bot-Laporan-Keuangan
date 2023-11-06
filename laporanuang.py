@@ -5,8 +5,8 @@ from aiogram import Bot, Dispatcher, types, executor
 
 # Masukan Bot Token Kalian
 # Masukan URL GoogleSpreadSheets 
-bot_token = 'ACCES TOKEN'
-sheets_url = 'SHEETS URL EDIT'
+bot_token = '6599729691:AAHnQAudNH19zxziLEm7r8zpMfDv74-aZ3c'
+sheets_url = 'https://docs.google.com/spreadsheets/d/1EOYO5oH91YQUGXan2RRymDJNu8U19FQfIunjq825vmY/edit?usp=sharing'
 
 # Ubah Menjadi Nama File Json Key Kalian
 # Harus Satu Folder Dengan bot.py File .json nya
