@@ -1,3 +1,4 @@
+"""
 import gspread
 import logging
 from datetime import datetime
@@ -72,3 +73,72 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         loop.stop()
         loop.run_until_complete(loop.shutdown_asyncgens())
+"""
+
+
+from datetime import datetime
+from pyrogram import Client, filters
+from creds import creds
+
+# Masukkan informasi kredensial bot Anda di file creds.py
+# Example: 
+# api_id = 12345
+# api_hash = "your_api_hash"
+# bot_token = "your_bot_token"
+
+# Ubah Menjadi Nama File Json Key Kalian
+# Harus Satu Folder Dengan bot.py File .json nya
+gsheets = gspread.service_account(filename='filenya.json')
+open_sheets = gsheets.open_by_url(sheets_url)
+
+logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
+logging.info('Try logged in !')
+
+app = Client("my_bot", api_id=creds.api_id, api_hash=creds.api_hash, bot_token=creds.bot_token)
+
+@app.on_message(filters.command(['help', 'start']))
+async def cara_pengunaan(client, message):
+    await message.reply_text('''
+    
+    Selamat Datang Di Bot Laporan Pengeluaran Uang ^_^
+    
+    Contoh Pengunaan :
+        
+        /new kategori #harga item
+        /new makanan #5.000 roti,minuman
+        
+    Perhatian :
+        
+        • Jangan menggunakan spasi dalam kategori,item maupun harga
+        
+        Contoh tidak pake spasi :
+            
+            /new makanan #5.000 roti,makanan
+        
+        Contoh menggunakan spasi :
+            
+            /new makanan #5.000 roti makanan
+            
+    Bisa menggunakan , - _ dan sebagainya.
+    
+    ''')
+
+@app.on_message(filters.command(['new']))
+async def laporan_uang(client, message):
+    x = message.text.replace('/new', '')
+    name = message.from_user.first_name
+    id_name = message.from_user.id
+    xy = x.split('#')
+    dt = datetime.now()
+    tgln = dt.strftime("%Y-%m-%d/%H:%M:%S")
+    inserts = open_sheets.sheet1
+    try:
+        all = str(tgln) + xy[0] + xy[1] + ' ' + name + ' ' + str(id_name)
+        splits = all.split()
+        ins = inserts.append_row(splits)
+        await message.reply_text('Laporan Berhasil !')
+    except:
+        await message.reply_text('Laporan Gagal, Pastikan Cara Penggunaannya Benar !')
+
+if __name__ == '__main__':
+    app.run()
