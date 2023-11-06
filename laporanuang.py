@@ -89,6 +89,7 @@ from creds import creds
 # Ubah Menjadi Nama File Json Key Kalian
 # Harus Satu Folder Dengan bot.py File .json nya
 gsheets = gspread.service_account(filename='filenya.json')
+sheets_url = 'https://docs.google.com/spreadsheets/d/1EOYO5oH91YQUGXan2RRymDJNu8U19FQfIunjq825vmY/edit?usp=sharing'
 open_sheets = gsheets.open_by_url(sheets_url)
 
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
