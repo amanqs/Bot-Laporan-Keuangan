@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "cosmic-shift-379405",
+  "private_key_id": "74f83cfd999fa1d8244006524069df4ba56ba2d4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzD5hFMTu+0COu\nikrViR0WamTPtGL9246t2YwFI7z5ueEk4vk/NjIBYrDKz2dkr9jDjp4K0X+VznBO\n7mseforgjzqrTwnRoRw+4FHLzAkm2cUPJruxmrd4Wqxo0tNHuNByGvKquR7L41CQ\nYvl9prUr1W8fYvtj5bZ5l5MY8gbDpoJsybpgLAYKZDnIrLrvNyU4SrR5cpZVaxN7\nDk3AsvoojO35kRx8mEg0F8FlmxKZZX5zWzxvFNHqhWtcfUItqdPDISlQladKQkX7\nfnCMms91a6Ivf97jj6n7W2iYsHeKBGdS3Xjb/JT58y6U4fQYGBaI8MtYOitbcoLB\nI6QEvvyZAgMBAAECggEAJVuGkEECTwALwbl2fXB60hdmavMeiAoLjXfKv7PCFHPU\nZia4i5iZ/DID4nw8/QO2/K2/iVBGBxIn2j/ht139SXZ4bg8yZDrxsqiISDWMXz+l\n3lBdbmNyDbkVKVV64QbM7lFy+W1f4HfPciBEHxPtznRcF7dF7YSaemnGNbkg8iZr\ntJBawSuDm2aSgItSSZpUAW4pt2+cU8iWS63cZW2mgXNfHC55Ed/xGcBGfQ5p9UeT\nJiLYkCICcvJfxzpQq5ge6bmGe7cFVARMNLAKJ57HFEFLnd3B8cMnRxEk1+QWy/h8\nwWi6c/8n4u7UEtsSUlMYGH+8NL5b2K9vDmvnXJAg1QKBgQD6gmsmEiNMot1EZ9E/\nqlcTbq1EHBF5jKSDzO/G7hS06Snd+KJjtyaJW6tdb4iwywHolNKT1WsDWfwIjITx\noAe8oFEN237LZHgCH8wTzOI72N7q4pmb/Y+qsKYZxuab2UtxpKJaYFCqHQiJo/VO\n2WPnb2byU0rwW1cnT6CM2MzaDwKBgQC2/ElJB0ZTwjfbA561r7KGD+XpvCYyC9fX\nVAVmIHyIZ7zF1NQvv+bu81vagl2Ebkrc7bfiOun/TSysuDo4vT/vS9h4+XOheyaV\njAtbFsQA11By8IggHrqb4xsWhMgtzvRyqKR1GdndribbgYUHZwG6FqO6feS3PuFD\ntI9bsHCG1wKBgGOHKXcIwcmS84JYFQTMcqgf0us6k57NSBetdp58vPFbqeys+ifP\n/pmYOC95Pr+vCGUVq8xcgJXmTIJBAhjV0f0ZXNq6mFfK5PtDEtvTDRdmBLshqJIX\nXdsdMAERy1GkNZtDI9XwalwMCPZWlAHt0QmEc0xX13BDeg7+TfVntYv1AoGAQj9+\njNj8ZjCnpjxeRmsQ2CaDV6cNsQrGnyfFOJ9EVuIv3vPZylvQ0Ov8clTGZL7Fjczm\nyRoJQ6v+I54jPg2OSyWLfujZKzp50qS8K8NHPQK3FpXswqw9ZVjIotN54dPOfoB9\n4gN09CQr30a6Ed8CKgwuRMN1fb5fMfL5//kWFEsCgYEAvXPZnwJzxWgOponIT9du\nngjELAvtfM+nNSZoG97j5iAjCEnNRlZR+0cyXe/wPei+l8uvBLTYM9oRB+fKv6yE\nFHUAqEOrbfNnvjkUxLJH7cwjPyWpU00laCN1DHRN/IgxmMVV8L3CEmop46AnjARZ\nNOgBbDZ9bTENUoiHWMqkkZ8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "laporan-keuangan@cosmic-shift-379405.iam.gserviceaccount.com",
+  "client_id": "105172631835269766643",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/laporan-keuangan%40cosmic-shift-379405.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
