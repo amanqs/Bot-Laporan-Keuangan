@@ -78,7 +78,7 @@ if __name__ == '__main__':
 
 from datetime import datetime
 from pyrogram import Client, filters
-from creds import creds
+from creds import *
 
 # Masukkan informasi kredensial bot Anda di file creds.py
 # Example: 
